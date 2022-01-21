@@ -5,7 +5,7 @@ export const AddCategory = ({ setcategorias }) => {
   const [inputValue, setinputValue] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setcategorias((categorias) => [...categorias, inputValue]);
+    setcategorias((categorias) => [ inputValue,...categorias]);
     setinputValue("");
   };
   const onChange = (e) => {
